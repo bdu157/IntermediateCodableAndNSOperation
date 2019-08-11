@@ -24,17 +24,17 @@ class UsersTableViewCell: UITableViewCell {
     func updateView() {
         if let user = user {
             self.fullNameLabel.text = "\(user.title) \(user.first) \(user.last)"
-            usersController.getImages(for: user.thumbnail) { (result) in
-                if let result = try? result.get() {
-                    
-                    DispatchQueue.main.async {
-                        self.thumbnailImage.image = UIImage(data: result)
-                    }
-                }
-            }
-        } else {
-            print("there is no user being passed from tableVC")
+//            usersController.getImages(for: user.thumbnail) { (result) in
+//                if let result = try? result.get() {
+//
+//                    DispatchQueue.main.async {
+//                        self.thumbnailImage.image = UIImage(data: result)
+//                    }
+//                }
+//            }
+//        } else {
+//            print("there is no user being passed from tableVC")
         }
     }
-    
+
 }

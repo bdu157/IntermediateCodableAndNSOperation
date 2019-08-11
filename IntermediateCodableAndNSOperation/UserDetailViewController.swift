@@ -6,6 +6,7 @@
 //  Copyright © 2019 Dongwoo Pae. All rights reserved.
 //
 
+import Foundation
 import UIKit
 
 class UserDetailViewController: UIViewController {
@@ -17,7 +18,7 @@ class UserDetailViewController: UIViewController {
     }
     
     var usersController: UsersController? = nil
-    
+    var passedCachedData: Cache<String, Data>?
     
     @IBOutlet weak var largeImage: UIImageView!
     @IBOutlet weak var nameLabel: UILabel!
@@ -37,10 +38,18 @@ class UserDetailViewController: UIViewController {
             self.phoneLabel.text = user.phone
             self.emailLabel.text = user.email
             
+            if let cachedData = passedCachedData?.value(for: user.phone) {
+                self.largeImage.image = UIImage(data: cachedData)
+                print("LargeImage is showing based on cachedData: \(cachedData)")
+            } else {
+            
             usersController.getImages(for: user.large) { (result) in
                 if let result = try? result.get() {
                     DispatchQueue.main.async {
                         self.largeImage.image = UIImage(data: result)
+                    }
+                    self.passedCachedData?.cache(value: result, for: user.phone)
+                    print("caching the largeImageData")
                     }
                 }
             }

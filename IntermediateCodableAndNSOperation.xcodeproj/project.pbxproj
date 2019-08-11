@@ -17,6 +17,8 @@
 		0B023BB822FFFC20000FF5F6 /* UsersTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B023BB722FFFC20000FF5F6 /* UsersTableViewController.swift */; };
 		0B023BBA22FFFC3D000FF5F6 /* UserDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B023BB922FFFC3D000FF5F6 /* UserDetailViewController.swift */; };
 		0B023BBC22FFFC5C000FF5F6 /* UsersTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B023BBB22FFFC5C000FF5F6 /* UsersTableViewCell.swift */; };
+		0B17F0702300ACBA000F4DD8 /* Cache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B17F06F2300ACBA000F4DD8 /* Cache.swift */; };
+		0B17F0722300B5EB000F4DD8 /* FetchPhotoOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B17F0712300B5EB000F4DD8 /* FetchPhotoOperation.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +34,8 @@
 		0B023BB722FFFC20000FF5F6 /* UsersTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersTableViewController.swift; sourceTree = "<group>"; };
 		0B023BB922FFFC3D000FF5F6 /* UserDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailViewController.swift; sourceTree = "<group>"; };
 		0B023BBB22FFFC5C000FF5F6 /* UsersTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersTableViewCell.swift; sourceTree = "<group>"; };
+		0B17F06F2300ACBA000F4DD8 /* Cache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cache.swift; sourceTree = "<group>"; };
+		0B17F0712300B5EB000F4DD8 /* FetchPhotoOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchPhotoOperation.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +74,7 @@
 				0B023BBB22FFFC5C000FF5F6 /* UsersTableViewCell.swift */,
 				0B023BB922FFFC3D000FF5F6 /* UserDetailViewController.swift */,
 				0B023BBE22FFFEE8000FF5F6 /* Models */,
+				0B17F06F2300ACBA000F4DD8 /* Cache.swift */,
 				0B023BB522FFF890000FF5F6 /* UsersController.swift */,
 				0B023BA122FFEDFE000FF5F6 /* Main.storyboard */,
 				0B023BA422FFEDFF000FF5F6 /* Assets.xcassets */,
@@ -83,6 +88,7 @@
 			isa = PBXGroup;
 			children = (
 				0B023BB122FFEF20000FF5F6 /* ConcurrentOperation.swift */,
+				0B17F0712300B5EB000F4DD8 /* FetchPhotoOperation.swift */,
 			);
 			path = Operations;
 			sourceTree = "<group>";
@@ -168,6 +174,8 @@
 			files = (
 				0B023BB422FFF440000FF5F6 /* Users.swift in Sources */,
 				0B023BB222FFEF20000FF5F6 /* ConcurrentOperation.swift in Sources */,
+				0B17F0722300B5EB000F4DD8 /* FetchPhotoOperation.swift in Sources */,
+				0B17F0702300ACBA000F4DD8 /* Cache.swift in Sources */,
 				0B023BBA22FFFC3D000FF5F6 /* UserDetailViewController.swift in Sources */,
 				0B023BBC22FFFC5C000FF5F6 /* UsersTableViewCell.swift in Sources */,
 				0B023BB622FFF890000FF5F6 /* UsersController.swift in Sources */,
