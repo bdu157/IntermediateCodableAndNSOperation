@@ -15,7 +15,16 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+        
+//        let usersController = UsersController()
+//
+//        usersController.getUsers(numberOfResults: 1000) { (error) in
+//            if let error = error {
+//                print(error)
+//                return
+//            }
+//        }
+//
         return true
     }
 

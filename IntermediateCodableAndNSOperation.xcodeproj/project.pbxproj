@@ -8,22 +8,30 @@
 
 /* Begin PBXBuildFile section */
 		0B023B9E22FFEDFE000FF5F6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B023B9D22FFEDFE000FF5F6 /* AppDelegate.swift */; };
-		0B023BA022FFEDFE000FF5F6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B023B9F22FFEDFE000FF5F6 /* ViewController.swift */; };
 		0B023BA322FFEDFE000FF5F6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0B023BA122FFEDFE000FF5F6 /* Main.storyboard */; };
 		0B023BA522FFEDFF000FF5F6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0B023BA422FFEDFF000FF5F6 /* Assets.xcassets */; };
 		0B023BA822FFEDFF000FF5F6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0B023BA622FFEDFF000FF5F6 /* LaunchScreen.storyboard */; };
 		0B023BB222FFEF20000FF5F6 /* ConcurrentOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B023BB122FFEF20000FF5F6 /* ConcurrentOperation.swift */; };
+		0B023BB422FFF440000FF5F6 /* Users.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B023BB322FFF440000FF5F6 /* Users.swift */; };
+		0B023BB622FFF890000FF5F6 /* UsersController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B023BB522FFF890000FF5F6 /* UsersController.swift */; };
+		0B023BB822FFFC20000FF5F6 /* UsersTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B023BB722FFFC20000FF5F6 /* UsersTableViewController.swift */; };
+		0B023BBA22FFFC3D000FF5F6 /* UserDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B023BB922FFFC3D000FF5F6 /* UserDetailViewController.swift */; };
+		0B023BBC22FFFC5C000FF5F6 /* UsersTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B023BBB22FFFC5C000FF5F6 /* UsersTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		0B023B9A22FFEDFE000FF5F6 /* IntermediateCodableAndNSOperation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IntermediateCodableAndNSOperation.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0B023B9D22FFEDFE000FF5F6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		0B023B9F22FFEDFE000FF5F6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		0B023BA222FFEDFE000FF5F6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0B023BA422FFEDFF000FF5F6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0B023BA722FFEDFF000FF5F6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0B023BA922FFEDFF000FF5F6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0B023BB122FFEF20000FF5F6 /* ConcurrentOperation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConcurrentOperation.swift; sourceTree = "<group>"; };
+		0B023BB322FFF440000FF5F6 /* Users.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Users.swift; sourceTree = "<group>"; };
+		0B023BB522FFF890000FF5F6 /* UsersController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersController.swift; sourceTree = "<group>"; };
+		0B023BB722FFFC20000FF5F6 /* UsersTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersTableViewController.swift; sourceTree = "<group>"; };
+		0B023BB922FFFC3D000FF5F6 /* UserDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailViewController.swift; sourceTree = "<group>"; };
+		0B023BBB22FFFC5C000FF5F6 /* UsersTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,14 +65,34 @@
 			isa = PBXGroup;
 			children = (
 				0B023B9D22FFEDFE000FF5F6 /* AppDelegate.swift */,
-				0B023B9F22FFEDFE000FF5F6 /* ViewController.swift */,
-				0B023BB122FFEF20000FF5F6 /* ConcurrentOperation.swift */,
+				0B023BBD22FFFEDC000FF5F6 /* Operations */,
+				0B023BB722FFFC20000FF5F6 /* UsersTableViewController.swift */,
+				0B023BBB22FFFC5C000FF5F6 /* UsersTableViewCell.swift */,
+				0B023BB922FFFC3D000FF5F6 /* UserDetailViewController.swift */,
+				0B023BBE22FFFEE8000FF5F6 /* Models */,
+				0B023BB522FFF890000FF5F6 /* UsersController.swift */,
 				0B023BA122FFEDFE000FF5F6 /* Main.storyboard */,
 				0B023BA422FFEDFF000FF5F6 /* Assets.xcassets */,
 				0B023BA622FFEDFF000FF5F6 /* LaunchScreen.storyboard */,
 				0B023BA922FFEDFF000FF5F6 /* Info.plist */,
 			);
 			path = IntermediateCodableAndNSOperation;
+			sourceTree = "<group>";
+		};
+		0B023BBD22FFFEDC000FF5F6 /* Operations */ = {
+			isa = PBXGroup;
+			children = (
+				0B023BB122FFEF20000FF5F6 /* ConcurrentOperation.swift */,
+			);
+			path = Operations;
+			sourceTree = "<group>";
+		};
+		0B023BBE22FFFEE8000FF5F6 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				0B023BB322FFF440000FF5F6 /* Users.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,8 +166,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0B023BA022FFEDFE000FF5F6 /* ViewController.swift in Sources */,
+				0B023BB422FFF440000FF5F6 /* Users.swift in Sources */,
 				0B023BB222FFEF20000FF5F6 /* ConcurrentOperation.swift in Sources */,
+				0B023BBA22FFFC3D000FF5F6 /* UserDetailViewController.swift in Sources */,
+				0B023BBC22FFFC5C000FF5F6 /* UsersTableViewCell.swift in Sources */,
+				0B023BB622FFF890000FF5F6 /* UsersController.swift in Sources */,
+				0B023BB822FFFC20000FF5F6 /* UsersTableViewController.swift in Sources */,
 				0B023B9E22FFEDFE000FF5F6 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
